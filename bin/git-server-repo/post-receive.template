@@ -1,0 +1,16 @@
+#!/bin/bash
+
+HOOKS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+GIT_DIR="$(dirname "$HOOKS_DIR")"
+DEPLOYMENT_DIR="$(dirname "$GIT_DIR")"
+
+git --work-tree=$DEPLOYMENT_DIR --git-dir=$GIT_DIR checkout -f
+cd $DEPLOYMENT_DIR
+
+#
+# DO WHAT YOU WANT WITH THE FILES YOU'VE JUST PUSHED
+# example:
+#
+#   $ gcc app.c -o app
+#
+# The above compiles your app.c file into an executable after each push

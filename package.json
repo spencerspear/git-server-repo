@@ -1,0 +1,22 @@
+{
+  "name": "git-server-repo",
+  "version": "1.0.0",
+  "description": "Create a git repo for deployments which runs a script after receiving a git push",
+  "main": "bin/git-server-repo/git-server-repo.js",
+  "bin": {
+    "git-server-repo": "bin/git-server-repo/git-server-repo.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "logger": "0.0.1",
+    "shelljs": "^0.8.1",
+    "yargs": "^10.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post-install": "npm install && npm link"
+  },
+  "author": "spear.spencer@gmail.com",
+  "license": "ISC"
+}
