@@ -1,7 +1,7 @@
 {
   "name": "git-server-repo",
   "version": "1.2.0",
-  "description": "Create a git repo for deployments which runs a script after receiving a git push",
+  "description": "A custom git command which creates a remote repository specifically for git deployments.",
   "main": "bin/git-server-repo/git-server-repo.js",
   "bin": {
     "git-server-repo": "bin/git-server-repo/git-server-repo.js"
