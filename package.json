@@ -14,8 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "post-install": "npm install && npm link"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "spear.spencer@gmail.com",
   "license": "ISC"
